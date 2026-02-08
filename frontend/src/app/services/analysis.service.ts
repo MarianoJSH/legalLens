@@ -11,7 +11,7 @@ export class AnalysisService {
     private readonly http = inject(HttpClient);
 
     // URL del backend
-    private readonly apiUrl = `${environment.apiUrl}/analysis/analyze`;
+    private readonly apiUrl = `${environment.apiUrl}/analysis/text`;
 
     /**
      * Envía el texto del contrato al backend para ser analizado por Gemini.
