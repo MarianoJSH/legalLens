@@ -14,7 +14,7 @@ export class AnalysisService {
     private readonly apiUrl = `${environment.apiUrl}/analysis/text`;
 
     /**
-     * Envía el texto del contrato al backend para ser analizado por Gemini.
+     * Envía el texto del contrato al backend para ser analizado por Groq.
      * Usamos 'firstValueFrom' para convertir el Observable en una Promesa,
      * lo cual es más sencillo de manejar con async/await.
      */
