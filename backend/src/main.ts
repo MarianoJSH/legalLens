@@ -6,11 +6,9 @@ async function bootstrap() {
 
   // Configuración de CORS más permisiva para desarrollo
   app.enableCors({
-    origin: [
-      'http://localhost:4200',
-      'https://legal-lens-disnnakqb-marianojshs-projects.vercel.app',
-    ],
+    origin: '*',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type, Accept, Authorization',
     credentials: true,
   });
 
