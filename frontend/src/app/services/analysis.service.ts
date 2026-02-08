@@ -1,6 +1,7 @@
 import { Injectable, inject } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { firstValueFrom } from "rxjs";
+import { environment } from '../../environments/environment.prod';
 
 @Injectable({
     providedIn: "root"
@@ -10,7 +11,7 @@ export class AnalysisService {
     private readonly http = inject(HttpClient);
 
     // URL del backend
-    private readonly apiUrl = 'http://localhost:3000/analysis/text';
+    private readonly apiUrl = `${environment.apiUrl}/analysis/analyze`;
 
     /**
      * Envía el texto del contrato al backend para ser analizado por Gemini.
