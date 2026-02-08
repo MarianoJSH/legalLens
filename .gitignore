@@ -1,0 +1,14 @@
+# Ignorar dependencias de las subcarpetas por si acaso
+**/node_modules/
+
+# Ignorar archivos de configuración local en cualquier nivel
+**/.env
+**/.env.local
+
+# Ignorar carpetas de compilación de Angular y NestJS
+**/dist/
+**/.angular/
+
+# Archivos de sistema y logs
+.DS_Store
+*.log
